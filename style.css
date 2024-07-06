@@ -6,7 +6,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    box-sizing: border-box;
 }
 
 body{
@@ -16,7 +15,7 @@ body{
 
 .menu {
     width: 100%;
-    height: 70px;
+    height: 61px;
     background-color: #9A5833;
     position: fixed;
     color: #fff;
@@ -25,10 +24,10 @@ body{
 
 .menu__container{
     display: flex;
-    justify-content: space-between;
+    justify-content:right ;
     align-items: center;
     width: 90%;
-    max-width: 1200px;
+    max-width: 2000px;
     height: 100%;
     margin: 0 auto;
 }
@@ -71,7 +70,7 @@ nav ul li a {
 }
 
 .menu__link:hover{
-    background-color: #5e7094;
+    background-color: burlywood;
 }
 
 
@@ -99,7 +98,7 @@ nav ul li a {
 }
 
 .menu__link--inside:hover{
-    background-color: #798499;
+    background-color: burlywood;
 }
 
 .menu__hamburguer{
@@ -214,7 +213,7 @@ footer a {
 
     .menu__item--active{
         --transform: rotate(0);
-        --background: #5e7094;
+        --background: burlywood;
     }
 
     .menu__item--show{
@@ -264,6 +263,6 @@ footer a {
     .menu__link--inside{
         width: 90%;
         margin-left: auto;
-        border-left: 1px solid #798499;
+        border-left: 1px solid burlywood;
     }
 }
