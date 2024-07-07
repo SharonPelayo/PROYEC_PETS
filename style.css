@@ -19,14 +19,8 @@ body{
     height: 61px;
     background-color: #9A5833;
     position: fixed;
-<<<<<<< HEAD
-    
-     }
-    
-=======
     color: #fff;
 }
->>>>>>> 7f5e65b05ae8211cda051f7e1fcb3e99831b499e
 
 
 .menu__container{
@@ -207,74 +201,4 @@ footer a {
         height: 480px;
         background-position: 10% 40%;
     }
-<<<<<<< HEAD
 }
-=======
-
-} */
-@media (max-width:800px){
-    .menu__hamburguer{
-        display: flex;
-    }
-
-    .menu__item{
-        --clip:0;
-        overflow:hidden ;
-    }
-
-    .menu__item--active{
-        --transform: rotate(0);
-        --background: burlywood;
-    }
-
-    .menu__item--show{
-        background-color: var(--background);
-    }
-
-
-    .menu__links{
-        position: fixed;
-        max-width: 400px;
-        width: 100%;
-        top: 70px;
-        bottom: 0;
-        right: 0;
-        background-color: #000;
-        overflow-y: auto;
-        display: grid;
-        grid-auto-rows: max-content;
-        transform: translateX(100%);
-    }
-
-    .menu__links--show{
-        transform: unset;
-        width: 100%;
-    }
-
-    .menu__link{
-        padding: 25px 0;
-        padding-left: 30px;
-        height: auto;
-    }
-
-    .menu__arrow{
-        margin-left: auto;
-        margin-right: 20px;
-    }
-
-    .menu__nesting{
-        display: grid;
-        position: unset;
-        width: 100%;
-        transform: translateY(0);
-        height: 0;
-        transition: height .3s;
-    }
-
-    .menu__link--inside{
-        width: 90%;
-        margin-left: auto;
-        border-left: 1px solid burlywood;
-    }
-}
->>>>>>> 7f5e65b05ae8211cda051f7e1fcb3e99831b499e
