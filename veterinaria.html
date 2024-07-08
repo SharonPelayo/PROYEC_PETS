@@ -6,9 +6,7 @@
         <title>ser.veterinaria</title>
         <link rel="stylesheet" href="subSerVet.css">
         <style>
-            body {
-            background-image: url(../menu/imagenes/subSerVet.jpg);
-        }
+        
         </style>
     </head> 
     <body>
@@ -17,18 +15,36 @@
                 <h1>servicios de veterinaria</h1>
                 <p>Ofrecemos un servicio especializado y muy completo para tus mascotas, principalmente para perros y gatos sin embargo podemos atender todo tipo de animales, tanto domesticos como exoticos. El objetivo de nuestro cento medico es preservar el bienestar de los animales.  </p>
             </div>
-            <div class="service-form">
-                <h2>Registrate aqui para agendar cita</h2>
-                <form action="submit_form.php" method="post">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <button type="submit">Enviar</button>
+            <div class="container">
+                <form>
+                    <div class="form-group">
+                        <label for="username">Mascota:</label> 
+                        <input type="text" id="username" name="username" required placeholder="Ingrese Nombre"> 
+                    </div>
+                    <div class="form-group">
+                        <label for="Edad_Mascota">Edad:</label> 
+                        <input type="text" id="Edad_Mascota" name="Edad_Mascota" required placeholder="Edad de tu mascota"> 
+                    </div>
+                    <div class="form-group">
+                        <label for="Raza_mascota">Raza:</label>
+                        <input type="text" id="Raza_mascota" name="Raza_mascota" required placeholder="Raza o tipo de mascota">
+                    </div>
+                    <div class="form-group">
+                        <label for="Fecha_Cita">Fecha:</label> 
+                        <input type="text" id="Fecha_Cita" name="Fecha_Cita" required placeholder="Dia que desea la cita dd/mm/aaaa"> 
+                    </div>
+                    <div class="form-group">
+                        <label for="Horario">Hora:</label> 
+                        <input type="text" id="Horario" name="Horario" required placeholder="Hora que desea la cita"> 
+                    </div>
+                    <div class="form-group">
+                        <label for="Dueño">Amo:</label>
+                        <input type="text" id="Dueño" name="Dueño" required placeholder="Ingrese nombre">
+                    </div>
+                    <button type="button" class="btn btn-outline-danger">Validar Cita</button>
                 </form>
             </div>
+            
         </div
     </body>
 </html> 

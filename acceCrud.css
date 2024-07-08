@@ -3,13 +3,13 @@ font-family: Arial, Helvetica, sans-serif;
 margin: 0;
 padding: 0;
 background-color: #f4f4f4;
-background-image: url(../menu/imagenes/perro.jpeg);
+background-image: url(imagenes/perro.jpeg);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 }
 header {
-background-color: #a8cf18;
+background-color: #9A5833;
 color: #fff;
 text-align: center;
 padding: 1rem 0;
