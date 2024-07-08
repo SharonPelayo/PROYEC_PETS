@@ -195,7 +195,7 @@ footer a {
         background-position: 10% 40%;
     }
 
-/* }
+}
 @media (max-width:800px){
     .menu__hamburguer{
         display: flex;
@@ -213,7 +213,7 @@ footer a {
 
     .menu__item--show{
         background-color: var(--background);
-    } */
+    }
 
 
     .menu__links{
