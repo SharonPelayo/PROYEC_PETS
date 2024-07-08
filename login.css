@@ -1,0 +1,99 @@
+body {
+    cursor: url("cursor_perrito_.png"), auto;
+    font: oblique bold 120% cursive;
+    backdrop-filter:blur(1px);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.login-container {
+    cursor: url("cursor_huella.png"), auto;
+    backdrop-filter:blur(5px);
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 0 0 15px black;
+    border-radius: 30px;
+    width: 300px;
+    /* margin: 30px auto; */
+    /* border: 1px solid black (200, 37, 37); */
+    color:black;
+    text-shadow: 0 0 10px #583c0c;
+    z-index: 2;
+    margin-right: 80px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.olvido {
+    float: right;
+}
+.form-group input {
+    width: calc(100% - 16px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4CAF50;
+
+}
+
+.btn-login {
+    background-color: #c57d56;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+    width: 100%;
+    margin:5px;
+    /* position: relative;
+    z-index: 2; */
+}
+.btn-nuevo {
+    background-color: #c57d56;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin:5px;
+}
+
+#hero {
+    min-height: 100vh;
+    position: relative;
+}
+video {
+    position: absolute;top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}

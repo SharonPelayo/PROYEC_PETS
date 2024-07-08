@@ -19,8 +19,26 @@ body{
     background-color: #9A5833;
     position: fixed;
     color: #fff;
+}
+/* 
+nav ul {
+    margin: 0;
+    list-style: none;
     display: flex;
-    justify-content:right;
+    justify-content: end;
+}
+
+nav ul li {
+    display: inline-block;
+} */
+.menu__container{
+    display: flex;
+    justify-content:right ;
+    align-items: center;
+    width: 90%;
+    max-width: 2000px;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .menu__links{
@@ -146,9 +164,7 @@ nav ul li a {
 }
 .box a:hover {
     background-color: aquamarine;
-}
-
-footer {
+}footer {
     background-color: #807d7d;
     color: #fff;
     text-align: center;
