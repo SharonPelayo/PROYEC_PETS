@@ -177,7 +177,7 @@ footer a {
 .wha {
     color: rgb(63, 192, 41);
 }
-@media (max-width: 952px) {
+@media (max-width: 800px) {
 
     .menu {
         display: flex;
