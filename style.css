@@ -6,7 +6,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-}
+    
+    }
 
 body{
     background-color: rgb(85, 83, 83);
@@ -35,8 +36,9 @@ nav ul li a {
     font-size: 18px;
     text-decoration: none;
     color: #fff;
-    
+
 }
+    
 
 .menu__item{
     list-style: none;
