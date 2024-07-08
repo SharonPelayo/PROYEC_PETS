@@ -1,0 +1,57 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+background-image: url(../menu/imagenes/perro.jpeg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+header {
+background-color: #a8cf18;
+color: #fff;
+text-align: center;
+padding: 1rem 0;
+}
+.gallery {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 1rem;
+}
+.gallery img {
+margin: 10px;
+border: 2px solid #ddd;
+border-radius: 5px;
+max-width: 200px;
+max-height: 200px;
+}
+.crud-table {
+width: 80%;
+margin: 2rem auto;
+border-collapse: collapse;
+}
+.crud-table th, .crud-table td {
+border: 1px solid #ddd;
+padding: 8px;
+}
+.crud-table th {
+background-color: #b64b19;
+color: rgb(201, 172, 12);
+}
+.form-container {
+display: flex;
+justify-content: center;
+margin: 2rem 0;
+}
+.form-container form {
+background-color: #fff;
+padding: 1rem;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+.form-container form input, .form-container form button {
+margin: 5px 0;
+padding: 0.5rem;
+}

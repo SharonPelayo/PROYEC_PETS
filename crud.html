@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios para Mascotas</title>
+    <link rel="stylesheet" href="acceCrud.css">
+</head>
+        <body>
+    <header>
+        <h1>Accesorios para Mascotas</h1>
+    </header>
+    <div class="gallery">
+        <img src="../menu/imagenes/perroCollar.webp" alt="Accesorio 1">
+        <img src="../menu/imagenes/diferents.webp" alt="Accesorio 2">
+        <img src="../menu/imagenes/camapets.jpg" alt="Accesorio 3">
+        <img src="../menu/imagenes/shitsu.jpg" alt="Accesorio 4">
+        <img src="../menu/imagenes/gato.jpg" alt="Accesorio 5">
+    </div>
+    <div class="form-container">
+        <form id="crud-form">
+            <input type="text" id="item-name" placeholder="Nombre del Accesorio">
+            <input type="text" id="item-image" placeholder="URL de la Imagen">
+            <button type="submit">Agregar/Actualizar</button>
+        </form>
+    </div>
+    <table class="crud-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Imagen</th>
+                <th>Acciones</th>
+            </tr>
+            </body>
+        
+        </thead>
+        <tbody id="crud-table-body">
+            <!-- Los elementos CRUD se insertarán aquí -->
+        </tbody>
+    </table>
+
+    <script>
+        let items = [];
+        let currentItemIndex = null;
+
+        document.getElementById('crud-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const itemName = document.getElementById('item-name').value;
+            const itemImage = document.getElementById('item-image').value;
+
+            if (currentItemIndex === null) {
+                items.push({ id: items.length + 1, name: itemName, image: itemImage });
+            } else {
+                items[currentItemIndex] = { id: items[currentItemIndex].id, name: itemName, image: itemImage };
+                currentItemIndex = null;
+            }
+
+            document.getElementById('crud-form').reset();
+            renderTable();
+        });
+
+        function renderTable() {
+            const tableBody = document.getElementById('crud-table-body');
+            tableBody.innerHTML = '';
+
+            items.forEach((item, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.id}</td>
+                    <td>${item.name}</td>
+                    <td><img src="${item.image}" alt="${item.name}" width="50"></td>
+                    <td>
+                        <button onclick="editItem(${index})">Editar</button>
+                        <button onclick="deleteItem(${index})">Eliminar</button>
+                    </td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        function editItem(index) {
+            currentItemIndex = index;
+            const item = items[index];
+            document.getElementById('item-name').value = item.name;
+            document.getElementById('item-image').value = item.image;
+        }
+
+        function deleteItem(index) {
+            items.splice(index, 1);
+            renderTable();
+        }
+
+        renderTable();
+    </script>
+</body>
+</html>
+        
