@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* Color beige */
+    color: #4b2e0e; /* Color café oscuro */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    
+    background-color: #77380c; /* Color café */
+    color: #fff;
+    padding-top: 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    display: flex;
+    align-items: center;
+}
+li{
+    display: flex;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#searchForm {
+    display: flex;
+}
+
+#searchInput {
+    padding: 0.5em;
+    border: none;
+    border-radius: 10
+    px;
+    outline: none;
+}
+
+#searchForm button {
+    background-color   #333; /* #5d2f10; */
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+#searchForm button:hover {
+    background-color: #8b4513;
+}
+
+/* Carrusel de imágenes */
+.imagen-carrusel {
+    width: 65%;
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+
+    padding-bottom: 5em; /* Espacio extra para evitar que el footer oculte los productos */
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+    padding: 1em;
+}
+
+.producto {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #8b4513;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5d2f10;
+}
+
+footer {
+    background-color: #333; /*#8b4513;*/
+    color: #fff;
+    padding: 1em;
+    position: relative; /* Cambiado de fixed a relative para evitar que oculte los productos */
+
+}
+
+.productos h2 {
+    grid-column: span 5;
+    text-align: center;
+    margin-bottom: 1em;
+}
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-contenido {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+    

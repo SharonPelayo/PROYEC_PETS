@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Tienda</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#" onclick="mostrarCarrito()"><img src="carritodecompras.svg" alt=""></a></li>
+            </ul>
+            <form id="formularioBusqueda" onsubmit="buscarProducto(event)">
+                <input type="text" id="entradaBusqueda" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </nav>
+    </header>
+    
+    <div class="carrusel">
+        <img class="imagen-carrusel" src="Juguetes.png" alt="Imagen 1">
+    </div>
+    
+    <main>
+        <section class="productos">
+            <h2>Nuestros Productos</h2>
+            <!-- Lista de productos -->
+            <div class="producto" id="producto1" data-nombre="Mascota 1">
+                <img src="https://via.placeholder.com/150" alt="Mascota 1">
+                <h3>Producto 1</h3>
+                <p>Descripción</p>
+                <p>Precio: $50</p>
+                <button onclick="añadirAlCarrito('Mascota 1',50)">Añadir al carrito</button>
+            </div>
+            <div class="producto" id="producto2" data-nombre="Mascota 2">
+                <img src="https://via.placeholder.com/150" alt="Mascota 2">
+                <h3>Producto 2</h3>
+                <p>Descripción</p>
+                <p>Precio: $60</p>
+                <button onclick="añadirAlCarrito('Mascota 2',60)">Añadir al carrito</button>
+            </div>
+            <div class="producto" id="producto3" data-nombre="Mascota 3">
+                <img src="https://via.placeholder.com/150" alt="Mascota 3">
+                <h3>Producto 3</h3>
+                <p>Descripción</p>
+                <p>Precio: $70</p>
+                <button onclick="añadirAlCarrito('Mascota 3',70)">Añadir al carrito</button>
+            </div>
+            <div class="producto" id="producto4" data-nombre="Mascota 4">
+                <img src="https://via.placeholder.com/150" alt="Mascota 4">
+                <h3>Producto 4</h3>
+                <p>Descripción</p>
+                <p>Precio: $80</p>
+                <button onclick="añadirAlCarrito('Mascota 4',80)">Añadir al carrito</button>
+            </div>
+            <div class="producto" id="producto5" data-nombre="Mascota 5">
+                <img src="https://via.placeholder.com/150" alt="Mascota 5">
+                <h3>Producto 5</h3>
+                <p>Descripción</p>
+                <p>Precio: $90</p>
+                <button onclick="añadirAlCarrito('Mascota 5',90)">Añadir al carrito</button>
+            </div>
+            <div class="producto" id="producto6" data-nombre="Mascota 6">
+                <img src="https://via.placeholder.com/150" alt="Mascota 6">
+                <h3>Producto 6</h3>
+                <p>Descripción</p>
+                <p>Precio: $100</p>
+                <button onclick="añadirAlCarrito('Mascota 6',100)">Añadir al carrito</button>
+            </div>
+            <div class="producto" id="producto7" data-nombre="Mascota 7">
+                <img src="https://via.placeholder.com/150" alt="Mascota 7">
+                <h3>Producto 7</h3>
+                <p>Descripción</p>
+                <p>Precio: $110</p>
+                <button onclick="añadirAlCarrito('Mascota 7',110)">Añadir al carrito</button>
+            </div>
+            <div class="producto" id="producto8" data-nombre="Mascota 8">
+                <img src="https://via.placeholder.com/150" alt="Mascota 8">
+                <h3>Producto 8</h3>
+                <p>Descripción</p>
+                <p>Precio: $120</p>
+                <button onclick="añadirAlCarrito('Mascota 8',120)">Añadir al carrito</button>
+            </div>
+            <div class="producto" id="producto9" data-nombre="Mascota 9">
+                <img src="https://via.placeholder.com/150" alt="Mascota 9">
+                <h3>Producto 9</h3>
+                <p>Descripción</p>
+                <p>Precio: $130</p>
+                <button onclick="añadirAlCarrito('Mascota 9',130)">Añadir al carrito</button>
+            </div>
+            <div class="producto" id="producto10" data-nombre="Mascota 10">
+                <img src="https://via.placeholder.com/150" alt="Mascota 10">
+                <h3>Producto 10</h3>
+                <p>Descripción</p>
+                <p>Precio: $140</p>
+                <button onclick="añadirAlCarrito('Mascota 10',140)">Añadir al carrito</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;  Tienda de Mascotas</p>
+    </footer>
+    
+    <!-- Modal para el carrito de compras -->
+    <div id="modalCarrito" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarCarrito()">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="listaCarrito"></ul>
+            <p id="totalCarrito"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
