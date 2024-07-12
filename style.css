@@ -133,6 +133,7 @@ nav ul li a {
     width: 100%;
     justify-content: center;
     justify-content: space-evenly;
+    font-size: 18px;
 }
 .box {
     width: 300px;
@@ -141,7 +142,7 @@ nav ul li a {
     margin: 25px 20px;
     color: #131111;
     text-align: center;
-    z-index: 2;
+    
     
 }
 .box img {
@@ -165,7 +166,7 @@ nav ul li a {
 }
 
 footer {
-    background-color: #807d7d;
+    background-color: #d1c62b;
     color: hsl(40, 90%, 4%);
     text-align: center;
     text-transform: uppercase;
