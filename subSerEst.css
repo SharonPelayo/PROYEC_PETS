@@ -8,6 +8,7 @@ body {
     font-family: Arial, sans-serif;
     color: rgb(240, 238, 234);
     text-align: center;
+    height: 100vh;
 }
 
 h1 {
