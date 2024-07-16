@@ -39,7 +39,6 @@
                             <li class="menu__inside">
                                 <a href="Error500.html" class="menu__link menu__link--inside">Aves</a>
                             </li>
-                            
                         </ul>
                     </li>
 
@@ -78,18 +77,108 @@
     
         </nav>
     </div>    
-            <div class="banner">
-                <li class="logo">
-                    <img src="../menu/imagenes/logo1.jpg" alt="Logo">
-                </li>
-
-            </div>
+            <!-- <div class="banner"> -->
+            </head>
+            <body>
+                <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+                <style>
+                    /* Estilos opcionales para el carrusel */
+                    .itemCarrousel {
+                        display: none; /* Oculta todos los items inicialmente */
+                    }
+                    .itemCarrousel.active {
+                        display: block; /* Muestra solo el item activo */
+                    }
+                </style>
+                <div class="carrousel">
+                    <div class="conteCarrousel">
+                        <div class="itemCarrousel active" id="itemCarrousel-1">
+                            <img src="imagenes/carrusel.1_1024x1024.jpg" alt="Imagen 1" class="img">
+                            <div class="itemCarrouselTarjeta"></div>
+                            <div class="itemCarrouselArrows">
+                                <a href="#itemCarrousel-3">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                                <a href="#itemCarrousel-2">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="itemCarrousel" id="itemCarrousel-2">
+                            <img src="imagenes/carrusel.2-1024x1024.jpg" alt="Imagen 2" class="img">
+                            <div class="itemCarrouselTarjeta"></div>
+                            <div class="itemCarrouselArrows">
+                                <a href="#itemCarrousel-1">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                                <a href="#itemCarrousel-3">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="itemCarrousel" id="itemCarrousel-3">
+                            <img src="imagenes/carrusel.3-1024x1024.jpg" alt="Imagen 3" class="img">
+                            <div class="itemCarrouselTarjeta"></div>
+                            <div class="itemCarrouselArrows">
+                                <a href="#itemCarrousel-2">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                                <a href="#itemCarrousel-1">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conteCarrouselController">
+                        <a href="#itemCarrousel-1">•</a>
+                        <a href="#itemCarrousel-2">•</a>
+                        <a href="#itemCarrousel-3">•</a>
+                    </div>
+                </div>
+            
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        // Obtener todos los items del carrusel
+                        const items = document.querySelectorAll('.itemCarrousel');
+                        // Obtener los enlaces del controlador
+                        const controllers = document.querySelectorAll('.conteCarrouselController a');
+            
+                        let index = 0; // Índice del item actual
+            
+                        // Función para mostrar el item especificado
+                        function mostrarItem(i) {
+                            // Ocultar todos los items
+                            items.forEach(item => item.classList.remove('active'));
+                            // Mostrar el item deseado
+                            items[i].classList.add('active');
+                        }
+            
+                        // Función para avanzar al siguiente item
+                        function siguienteItem() {
+                            index = (index + 1) % items.length;
+                            mostrarItem(index);
+                        }
+            
+                        // Función para cambiar automáticamente las imágenes cada 3 segundos
+                        setInterval(siguienteItem, 3000);
+            
+                        // Añadir eventos a los enlaces del controlador para cambiar manualmente
+                        controllers.forEach((enlace, i) => {
+                            enlace.addEventListener('click', function(event) {
+                                event.preventDefault();
+                                index = i;
+                                mostrarItem(index);
+                            });
+                        });
+                    });
+                </script>
+            <!-- </div> -->
     <div class="cajas">
         <div class="box">
             <img src="imagenes/mision.jpg" alt="">
             
             <h2>MISIÓN</h2>
-            <h3>Las necesidades de nuestros clientes ofreciendo una amplia gama de productos y servicios para el cuidado integral de las mascotas. Brindando siempre una asesoría profesional, comprometidos con el mejoramiento de la calidad de vida de las mascotas y sus propietarios</h3>
+            <h5>Las necesidades de nuestros clientes ofreciendo una amplia gama de productos y servicios para el cuidado integral de las mascotas. Brindando siempre una asesoría profesional, comprometidos con el mejoramiento de la calidad de vida de las mascotas y sus propietarios</h5>
             
             <!-- <a href="#">Volver al inicio</a> -->
         </div>
@@ -97,7 +186,7 @@
         <div class="box">
             <img src="imagenes/vision.jpg" alt="">
             <h2>VISIÓN</h2>
-            <h3>Ser una empresa reconocida por nuestro profesionalismo en la comercialización de los mejores productos y prestación de servicios dedicados al bienestar de las mascotas, brindándoles confianza, respeto y cariño, creando ambientes ideales para la felicidad y bienestar de nuestros clientes.</h3>
+            <h5>Ser una empresa reconocida por nuestro profesionalismo en la comercialización de los mejores productos y prestación de servicios dedicados al bienestar de las mascotas, brindándoles confianza, respeto y cariño, creando ambientes ideales para la felicidad y bienestar de nuestros clientes.</h5>
         </div>
         <div class="box">
             <h2>galeria</h2>
