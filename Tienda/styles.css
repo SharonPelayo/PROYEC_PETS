@@ -60,7 +60,7 @@ header h1 {
 }
 
 #searchForm button {
-    background-color   #333; /* #5d2f10; */
+    background-color:#5d2f10;
     color: #fff;
     border: none;
     border-radius: 0 5px 5px 0;
@@ -127,7 +127,7 @@ button:hover {
 }
 
 footer {
-    background-color: #333; /*#8b4513;*/
+    background-color: #8b4513;
     color: #fff;
     padding: 1em;
     position: relative; /* Cambiado de fixed a relative para evitar que oculte los productos */

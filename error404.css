@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajustado a 100vh para cubrir toda la pantalla */
+    background-color: #333; /* Color de fondo de la página */
+    color: #fff; /* Color de texto blanco para contraste */
+}
+
+.container {
+    position: relative;
+    z-index: 2; /* Sobre la imagen de fondo */
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.container h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.container h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.container a {
+    text-decoration: none;
+    border: 3px solid #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 18px;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.2s;
+}
+
+.container a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Asegura que esté detrás del contenido */
+    overflow: hidden; /* Para evitar que la imagen sobresalga del contenedor */
+}
+
+.background-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 60%;
+    min-height: 60%;
+    width: auto;
+    height: auto;
+}
