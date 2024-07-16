@@ -1,12 +1,12 @@
 body {
-    background-image: url('../menu/imagenes/urgenciaCanina.jpg');
+    background-image: url('../menu/imagenes/urg_medicas.jpg');
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen en el fondo */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: rgb(231, 36, 11);
+    color: rgb(248, 245, 244);
     text-align: center;
 }
 
