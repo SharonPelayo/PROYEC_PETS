@@ -14,8 +14,16 @@ body {
     font-family: Arial, sans-serif; /* Ajusta según tu preferencia */
     background-color: #130404; /* Ajusta según tu diseño */
     padding: 20px;
-    
-    
+   
+}
+.service-description {
+    height: 100%;
+    margin: 0;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .container {
@@ -26,9 +34,11 @@ body {
     border-radius: 30px; /* Opcional: redondea los bordes del contenedor */
     box-shadow:  0 0 15px black; /* Opcional: añade sombra */
     justify-content:calc(60px);
+    height: 100%;
     display: flex;
     backdrop-filter:blur(5px);
     z-index: 2;
+    
 
 }
 

@@ -8,6 +8,16 @@ body {
     font-family: Arial, sans-serif;
     color: rgb(248, 245, 244);
     text-align: center;
+    
+}
+.service-page{
+    height: 100%;
+    margin: 0;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 h1 {
