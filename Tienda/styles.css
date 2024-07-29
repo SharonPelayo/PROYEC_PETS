@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5dc; /* Color beige */
-    color: #4b2e0e; /* Color café oscuro */
+    background-color: #f5f5dc; 
+    color: #4b2e0e; /
     margin: 0;
     padding: 0;
     text-align: center;
@@ -9,7 +9,7 @@ body {
 
 header {
     
-    background-color: #77380c; /* Color café */
+    background-color: #77380c; 
     color: #fff;
     padding-top: 15px;
 }
@@ -72,9 +72,8 @@ header h1 {
     background-color: #8b4513;
 }
 
-/* Carrusel de imágenes */
 .imagen-carrusel {
-    width: 65%;
+    width: 50%;
     overflow: hidden;
     position: relative;
     height: 500px;
@@ -89,7 +88,7 @@ header h1 {
 
 main {
 
-    padding-bottom: 5em; /* Espacio extra para evitar que el footer oculte los productos */
+    padding-bottom: 5em; 
 }
 
 .productos {
@@ -130,7 +129,7 @@ footer {
     background-color: #8b4513;
     color: #fff;
     padding: 1em;
-    position: relative; /* Cambiado de fixed a relative para evitar que oculte los productos */
+    position: relative; 
 
 }
 
@@ -139,7 +138,7 @@ footer {
     text-align: center;
     margin-bottom: 1em;
 }
-/* Estilos para el modal */
+
 .modal {
     display: none;
     position: fixed;
@@ -159,9 +158,12 @@ footer {
     border: 1px solid #888;
     width: 80%;
     max-width: 600px;
-    text-align: left;
-}
+    text-align: center;
 
+}
+.eliminardelcarrito{
+    align-items: right;
+}
 .cerrar {
     color: #aaa;
     float: right;

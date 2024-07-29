@@ -1,4 +1,4 @@
-// script.js
+
 
 let indiceActual = 0;
 const imagenes = [
@@ -12,11 +12,8 @@ function mostrarSiguienteImagen() {
     document.querySelector('.imagen-carrusel').src = imagenes[indiceActual];
 }
 
-setInterval(mostrarSiguienteImagen, 3000); // Cambiar la imagen cada 4segundos
+setInterval(mostrarSiguienteImagen, 3000); 
 
-// script.js
-
-// script.js
 
 let carrito = [];
 
@@ -67,7 +64,7 @@ window.onclick = function(event) {
     }
 }
 
-// Función para buscar productos
+
 function buscarProducto(event) {
     event.preventDefault();
     const entradaBusqueda = document.getElementById('entradaBusqueda').value.toLowerCase();
